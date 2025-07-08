@@ -1,8 +1,8 @@
+import java.awt.*;
+import java.awt.event.*;
 import java.util.ArrayList;
 import java.util.Random;
-import java.awt.event.*;
 import javax.swing.*;
-import java.awt.*;
 
 public class sneakegame extends JPanel implements ActionListener,KeyListener{
     class tile{
@@ -46,7 +46,7 @@ public class sneakegame extends JPanel implements ActionListener,KeyListener{
         random= new Random();
         palcefood();
 
-        gamelogic = new Timer(100,this);
+        gamelogic = new Timer(200,this);
         gamelogic.start();
         velocityX=0;
         velocityY=0;
